@@ -1,0 +1,14 @@
+--- 
+- hosts: webservers
+  connection: ssh
+  user: ansible
+  become: yes
+
+
+
+
+  tasks:
+    - name: installing a s/w
+      yum: 
+         name: java
+         state: latest

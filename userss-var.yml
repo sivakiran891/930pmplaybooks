@@ -1,0 +1,15 @@
+---
+- name: variables playbook
+  hosts: webservers
+  become: true
+  user: ansible
+  connection: ssh
+
+
+  vars_files:
+    - users.yml
+  tasks:
+    - name: creating user {{user2}}
+      user:
+        name: '{{user2}}'
+

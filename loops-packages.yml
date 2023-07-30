@@ -1,0 +1,18 @@
+--- 
+- hosts: all
+  user: ansible
+  connection: ssh
+  become: true
+
+
+  tasks:
+    - name: installing multiple /w
+      yum: name = '{{item}}' state=installed
+      with_items:
+            - httpd
+            - mysql
+            - docker
+            - java
+            - tree
+            - git
+

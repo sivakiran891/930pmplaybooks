@@ -1,0 +1,16 @@
+--- # this si file used to
+- hosts: webservers
+  user: ansible
+  become: yes
+  connection: ssh
+
+
+
+  tasks:
+    - name: copying a file from server to hosts
+      copy:
+        src: /home/ansible/index.html
+        dest: /home/ansible
+        owner: rohit
+
+

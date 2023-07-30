@@ -1,0 +1,11 @@
+--- # this
+- hosts: webservers
+  user: ansible
+  become: yes
+  connection: ssh
+
+  tasks:
+    - name: install package into hosts
+      yum: 
+        name: docker
+        state: installed

@@ -1,0 +1,94 @@
+" ============================================================================
+" Netrw Directory Listing                                        (netrw v173)
+"   /
+"   Sorted by      name
+"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,\~\=\*$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
+"   Quick Help: <F1>:help  -:go up dir  D:delete  R:rename  s:sort-by  x:special
+" ==============================================================================
+../
+/
+| boot/
+| dev/
+| etc/
+| home/
+| | anisble/
+| | ansible/
+| | | .ansible/
+| | | .ssh/
+| | | .vim/
+| | | dir1/
+| | | playbook/
+| | | | roles/
+| | | | | testroles/
+| | | | | | tasks/
+| | | | master.yml
+| | | .bash_history
+| | | .bash_logout
+| | | .bash_profile
+| | | .bashrc
+| | | .viminfo
+| | | Adanifile
+| | | adanifile
+| | | conditionals.yml
+| | | copy-file.yml
+| | | create
+| | | create-dir1.yml
+| | | create-dir2.yml
+| | | create-dir3.yml
+| | | create-file.yml
+| | | create-user-onemore.yml
+| | | create-user.yml
+| | | delete-dir.yml
+| | | file1
+| | | file2
+| | | handlers.yml
+| | | index.html
+| | | instal-java-jenkins.yml
+| | | install-java-tomcat.yml
+| | | install-multiple-packages.yml
+| | | install-package.yml
+| | | install-software.yml
+| | | loops-pacakges.yml
+| | | loops-packages.yml
+| | | loops-user.yml
+| | | multiusers-playbbok.yml
+| | | onemore-conditionals.yml
+| | | remove-package.yml
+| | | reove
+| | | sample.yml
+| | | siva.yml
+| | | smpl.yml
+| | | tasks.yml
+| | | two-tasks.yml
+| | | user.yml
+| | | users.yml
+| | | userss-var.yml
+| | | usersss-vars.yml
+| | | variable.yml
+| | | vars.yml
+| | | xyzfile
+| | | .conditionals.yml.swp
+| | | .copy-file.yml.swp
+| | | .create-dir1.yml.swp
+| | | .create-dir3.yml.swp
+| | | .create-user.yml.swp
+| | | .install-software.yml.swp
+| | | .test.yml.swp
+| | ec2-user/
+| local/
+| media/
+| mnt/
+| opt/
+| proc/
+| root/
+| run/
+| srv/
+| sys/
+| tmp/
+| usr/
+| var/
+| .autorelabel
+| bin@	 --> usr/bin
+| lib64@	 --> usr/lib64
+| lib@	 --> usr/lib
+| sbin@	 --> usr/sbin

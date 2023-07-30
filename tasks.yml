@@ -1,0 +1,10 @@
+--- #tgis is the demp og night
+- hosts: webservers
+  user: ansible
+  become: yes
+  connection: ssh
+
+  tasks:
+    - name: installing httpd s/w in webservers
+      action: yum name=htt  state=installed
+      ignore_errors: yes

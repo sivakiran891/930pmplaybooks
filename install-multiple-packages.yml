@@ -1,0 +1,15 @@
+--- 
+- name: my loop playbooks
+  hosts: webservers
+  become: true
+  user: ansible
+  connection: ssh
+
+
+  tasks:
+    - name: install pacakges 
+      yum:
+        name: ['git','which','mysql','tree','wget','httpd','java']
+        state: installed
+
+

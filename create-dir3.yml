@@ -1,0 +1,14 @@
+--- #this isdemo 
+- name: test playbook
+  hosts: all
+  connection: ssh
+  user: ansible
+  become: yes
+
+
+  tasks: 
+    - name: creating a directory
+      file: 
+        path: /home/ansible/abc123xyz
+        state: directory 
+

@@ -1,0 +1,12 @@
+--- #this is delet9mg file
+- hosts: webservers
+  user: ansible
+  become: true
+  connection: ssh
+
+
+  tasks: 
+    - name: deleting a folder
+      file:
+        path: /home/ansible/testdir
+        state: absent

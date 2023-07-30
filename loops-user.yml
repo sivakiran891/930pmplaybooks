@@ -1,0 +1,15 @@
+--- 
+- hosts: all
+  user: ansible
+  become: true
+  connection: ssh
+
+
+  tasks:
+    - name: creating multiple users
+      user: name='{{item}}' state=present
+      with_items:
+            - Raj
+            - John
+            - Kevin
+            - Helen

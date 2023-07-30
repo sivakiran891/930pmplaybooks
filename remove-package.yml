@@ -1,0 +1,13 @@
+--- # program to emov hodts
+- name: my playbook
+  hosts: webservers
+  user: ansible
+  become: true
+  connection: ssh
+    
+
+  tasks:
+    - name: un-install a s/w
+      yum:
+        name: docker
+        state: absent

@@ -1,0 +1,44 @@
+--- # sample
+- name: conditionals playbook
+  hosts: all
+  become: true
+  user: ansible
+  connection: ssh
+
+  tasks: 
+    - name: install httpd pacakge
+      yum: 
+        name: httpd
+        state: installed
+      when: ansible_os_family == "RedHat"
+         
+
+    - name: start httpd service
+      service: 
+        name: httpd
+        state: started
+      when: ansible_os_family == "RedHat"
+
+
+
+
+    - name: install apache2 pacakge
+      apt:
+        name: apache2
+        state: present
+      when: ansible_os_family == "Debian"
+
+    - name: start  apache2 service
+      service:
+        name: apache2
+        state: started
+      when: ansible_os_family == "Debian"
+
+    - name: copy index.html file
+      copy:
+        src: /home/ansible/index.html
+        dest: /var/www/html
+        owner: rohit
+        mode: 0777
+
+  
